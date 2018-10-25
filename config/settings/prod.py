@@ -6,7 +6,8 @@ import dj_database_url
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'https://jgiapp1.herokuapp.com/',  # heroku url
+    # 'https://jgiapp1.herokuapp.com/',  # heroku url
+    '*',
 ]
 
 DATABASES = {'default': dj_database_url.config()}
