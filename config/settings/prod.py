@@ -27,7 +27,6 @@ import dj_database_url
 # STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # DEFAULT_FILE_STORAGE = 'whitenoise.storage.'
 #
-import dj_database_url
 DATABASES['default'] =  dj_database_url.config()
 
 # Honor the 'X-Forwarded-Proto' header for request.is_secure()
