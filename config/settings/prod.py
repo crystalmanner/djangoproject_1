@@ -5,10 +5,11 @@ import dj_database_url
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = True
 #
-# ALLOWED_HOSTS = [
-#     # 'https://jgiapp1.herokuapp.com/',  # heroku url
-#     '*',
-# ]
+ALLOWED_HOSTS = [
+    # 'https://jgiapp1.herokuapp.com/',  # heroku url
+    # '*',
+    'https://jgiapp1.herokuapp.com/',
+]
 #
 # DATABASES = {'default': dj_database_url.config()}
 # DATABASES['default']['ENGINE'] = 'django.db.backends.postgresql_psycopg2'
@@ -33,7 +34,7 @@ DATABASES['default'] =  dj_database_url.config()
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # Allow all host headers
-ALLOWED_HOSTS = ['*']
+# ALLOWED_HOSTS = ['*']
 
 # Static asset configuration
 import os
